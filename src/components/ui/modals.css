@@ -1,0 +1,70 @@
+
+@keyframes appear-custom-modal {
+  from {
+    filter: blur(30px);
+
+  }
+  to {
+    filter: blur(0px);
+
+  }
+}
+
+.modal-overlay {
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; 
+  transition: scale .3s ease, display .3s ease allow-discrete;
+}
+.custom-modal  {
+  transition: scale .3s ease, display .3s ease allow-discrete;
+  scale: 0;
+  position: relative;
+  border: none;
+  padding: 0;
+
+  border-radius: 5px 5px;
+  margin-top: 2rem;
+
+  display: flex;
+  border-radius: 8px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+
+  min-width: 500px;
+  min-height: 25vh;
+  max-height: calc(100vh - 50px);
+
+  flex-direction: column;
+ 
+  animation: appear-custom-modal 0.5s ease;
+  &[open] {
+   
+    scale: 1;
+    overflow-y: auto;
+    transition: scale .3s ease-in-out, opacity .3s ease, translate 1s ease;
+    translate: 0px 0px;
+    @starting-style {
+      scale: 0;
+      translate: 0px 100px;
+    }
+ 
+    
+  }
+}
+@media (max-width: 650px ) {
+  dialog {
+    min-width: 350px;
+
+  }
+}
