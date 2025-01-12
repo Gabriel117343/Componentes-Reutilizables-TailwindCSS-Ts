@@ -10,8 +10,8 @@ Este documento explica cómo **utilizar Componentes personalizados en tu proyect
 
 Si estás utilizando **Vite** en tu proyecto, te recomendamos seguir la [guía de instalación de Tailwind CSS con Vite](https://tailwindcss.com/docs/guides/vite) para una configuración óptima.
 
-![Vite Logo](https://vitejs.dev/logo.svg)
-![Tailwind CSS Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1200px-Tailwind_CSS_Logo.svg.png)
+<img src="https://vitejs.dev/logo.svg" alt="Vite Logo" width="50" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1200px-Tailwind_CSS_Logo.svg.png" alt="Tailwind CSS Logo" width="50" />
 
 ## 🛠️ Instalación de `tailwind-merge`
 
